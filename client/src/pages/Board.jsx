@@ -10,6 +10,10 @@ import io from 'socket.io-client'
 // import './pages.css'
 
 const socket = io('http://localhost:4001/api/v1/socket', {
+  cors: {
+    origin: 'http://localhost:4001',
+    credentials: true,
+  },
   transports: ['websocket'],
 })
 
