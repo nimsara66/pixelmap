@@ -9,11 +9,7 @@ import { HexColorPicker } from 'react-colorful'
 import io from 'socket.io-client'
 // import './pages.css'
 
-const socket = io('http://localhost:4001/api/v1/socket', {
-  cors: {
-    origin: 'http://localhost:4001',
-    credentials: true,
-  },
+const socket = io('https://pixelmap-production.up.railway.app/api/v1/socket', {
   transports: ['websocket'],
 })
 
