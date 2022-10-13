@@ -28,7 +28,8 @@ function Board() {
   const [loading, setLoading] = useState(true)
   const [board, setBoard] = useState([])
   const [act, setAct] = useState(false)
-  const sizeofboard = process.env.REACT_APP_SIZE
+  // const sizeofboard = process.env.REACT_APP_SIZE
+  const sizeofboard = 100
 
   // console.log(board)
 
