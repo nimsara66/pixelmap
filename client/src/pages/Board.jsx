@@ -78,6 +78,8 @@ function Board() {
     }
 
     fetchData(board)
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user, token])
 
   useEffect(() => {
@@ -104,6 +106,7 @@ function Board() {
       const availablePixels = await getAvailablePixels(user, token)
       setCredit(parseInt(availablePixels))
     })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [socket])
 
   // const checkandset=(bd, posi)=>{
@@ -161,7 +164,7 @@ function Board() {
 
   const pathMatchRoute = (num) => {
     // if (!num.state) {
-    if (num.id == currentClick) {
+    if (num.id === currentClick) {
       // console.log(currentClick)
       return true
     } else {
